@@ -119,16 +119,16 @@
 <div id="order-section"></div>
 
 <script>
-  const ORDER_STATUS = "OPEN"; // change to CLOSED when needed
+  const ORDER_STATUS = "CLOSED"; // change to CLOSED when needed
 
   const orderSection = document.getElementById("order-section");
 
-  if (ORDER_STATUS === "CLOSED") {
+  if (ORDER_STATUS === "OPEN") {
     orderSection.innerHTML = `
       <a class="button" href="https://forms.gle/zhVmT2TCKjoEYo8e7" target="_blank">
         Place an Order
       </a>
-      <p>Order by Thursday for Friday pickup</p>
+      <p>Order by Wednesday for Friday pickup</p>
     `;
   } else {
     orderSection.innerHTML = `
