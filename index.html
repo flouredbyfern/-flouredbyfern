@@ -3,21 +3,72 @@
 <head>
   <title>Floured by Fern</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+
   <style>
-    body { font-family: Arial; text-align: center; margin: 0; background: #fffaf5; }
-    header { background: #d6a77a; color: white; padding: 20px; }
-    h1 { margin: 0; }
-    .section { padding: 30px; }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #fffaf5;
+      color: #4b3a2f;
+      text-align: center;
+    }
+
+    header {
+      background: #e7c9a9;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      margin: 0;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .menu-item {
+      margin: 8px 0;
+    }
+
+    .status {
+      color: #a94442;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
     .btn {
       background: #a2673f;
       color: white;
-      padding: 15px 25px;
+      padding: 14px 26px;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 8px;
       display: inline-block;
       margin-top: 20px;
     }
-    .closed { color: red; font-weight: bold; }
+
+    .btn:hover {
+      background: #8a5534;
+    }
+
+    footer {
+      background: #f3e4d7;
+      padding: 20px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
   </style>
 </head>
 
@@ -25,24 +76,29 @@
 
 <header>
   <h1>Floured by Fern</h1>
-  <p>Fresh Artisan Sourdough</p>
+  <p class="tagline">Handmade sourdough baked in small batches</p>
 </header>
 
 <div class="section">
   <h2>This Week’s Menu</h2>
-  <p>• Classic Sourdough</p>
-  <p>• Garlic Parmesan Rosemary</p>
-  <p>• Cinnamon Raisin</p>
 
-  <p class="closed">Orders currently CLOSED</p>
+  <p class="menu-item">Classic Sourdough</p>
+  <p class="menu-item">Garlic Parmesan Rosemary</p>
+  <p class="menu-item">Cinnamon Raisin</p>
 
-<a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdcqBuJtnePiSDqSld5_QLiCbI7oZHMxQMeox87H0EKwraM2Q/viewform?usp=dialog">Place an Order</a>
+  <p class="status">Orders open Monday–Wednesday or until sold out</p>
+
+  <a class="btn" href="https://forms.gle/7H6jkaff2vwN9f52A">Place an Order</a>
 </div>
 
 <div class="section">
-  <h2>Pickup Info</h2>
-  <p>Friday Pickup in Groveland / Mascotte</p>
+  <h2>Pickup</h2>
+  <p>Friday Pickup – Groveland & Mascotte</p>
 </div>
+
+<footer>
+  © 2026 Floured by Fern
+</footer>
 
 </body>
 </html>
