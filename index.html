@@ -116,9 +116,29 @@
   </div>
 
   <!-- ORDER BUTTON (PUT YOUR GOOGLE FORM LINK BELOW) -->
-  <a class="button" href="https://forms.gle/nZCD2KkBtZQo4x5e9" target="_blank">
-    Place an Order
-  </a>
+<div id="order-section"></div>
+
+<script>
+  const ORDER_STATUS = "OPEN"; // change to CLOSED when needed
+
+  const orderSection = document.getElementById("order-section");
+
+  if (ORDER_STATUS === "OPEN") {
+    orderSection.innerHTML = `
+      <a class="button" href="https://forms.gle/zhVmT2TCKjoEYo8e7" target="_blank">
+        Place an Order
+      </a>
+      <p>Order by Thursday for Friday pickup</p>
+    `;
+  } else {
+    orderSection.innerHTML = `
+      <a class="button" style="background: gray; pointer-events: none;">
+        Orders Closed
+      </a>
+      <p>Orders are closed for this week 💜</p>
+    `;
+  }
+</script>
 
   <!-- PHONE NUMBER -->
   <div class="phone">
